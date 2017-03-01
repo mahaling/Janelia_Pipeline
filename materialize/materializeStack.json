@@ -1,0 +1,33 @@
+{
+  "owner":"gayathri",
+  "project":"EM_Phase1",
+  "stack":"Phase1RawData_AIBS",
+  "outdir":"/data/em-131fs/gayathri/renderedBoxes",
+  "size":1024,
+  "maxLevel":9,
+  "overviewWidth":192,
+  "format":"jpg",
+  "jobName":"materialize",
+  "javaClass":"org.janelia.render.client.BoxClient",
+  "memory":"10G",
+  
+
+
+#  "sparkPath":"/usr/local/spark/bin/spark-submit",
+#  "masterUrl":"spark://10.128.24.100:7077",
+#  "baseDataUrl":"http://em-131fs:8080/render-ws/v1",
+#  "memory":"120g",
+#  "jarfile":"/data/nc-em2/gayathrim/Janelia_Pipeline/renderBin/lib/render-ws-spark-client-0.3.0-SNAPSHOT-standalone.jar",
+#  "targetCollection":"Phase1RawData_AIBS_2266_2300",
+#  "pairJson":"/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tile_pairs_Phase1RawData_AIBS_z_2266_to_2300_dist_0.json.gz",
+#  "SIFTfdSize":4,
+#  "SIFTsteps":3,
+#  "matchMaxEpsilon":20,
+#  "maxFeatureCacheGb":12,
+#  "SIFTminScale": 0.58,
+#  "renderScale":0.6,
+#  "SIFTmaxScale":0.62,
+#  "matchRod":0.8,
+#  "matchMaxNumInliers":100
+
+}

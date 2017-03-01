@@ -1,0 +1,12 @@
+{
+  "owner":"gayathri",
+  "project":"EM_Phase1",
+  "stack":"Phase1RawData_AIBS",
+  "startz":2501,
+  "endz":3500,
+  "outdir":"/data/em-131fs/gayathri/downsampledSections",
+  "scale":0.05,
+  "imgformat":"jpg",
+  "filter":"false",
+  "baseDataUrl":"http://em-131fs:8080/render-ws/v1"
+}
