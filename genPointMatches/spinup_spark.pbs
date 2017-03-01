@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+#
+#PBS -l walltime=17:45:00
+#PBS -N spark_PBS_test
+
+# TODO -v SPARK_HOME,SPARK_PORT,NO_NODES,sparkscript(class, jar, py),logdir?
+
+if [ ! -d ${SPARK_HOME} ]; then
+    echo "cannot find spark home directory ${SPARK_HOME}"
+    export SPARK_HOME=/data/nc-em/russelt/spark/
+fi
+echo "using spark home ${SPARK_HOME}"
+
+if [ -f ${SPARK_HOME}/spark_source_me.sh ]; then
+    .  ${SPARK_HOME}/spark_source_me.sh
+fi
+
+mkdir -p logdir
+
+nodes=($( cat $PBS_NODEFILE | sort | uniq ))
+nnodes=${#nodes[@]}
+last=$(( $nnodes - 1 ))
+
+parallelism=$(( $nnodes * 20 * 2 ))
+echo $parallelism
+
+cd $PBS_O_WORKDIR
+
+ssh ${nodes[0]} "source /etc/profile; module load java; cd ${SPARK_HOME}; ./sbin/start-master.sh"
+
+sparkmaster="spark://${nodes[0]}:7077"
+
+for i in $( seq 0 $last )
+do
+    ssh ${nodes[$i]} "source /etc/profile; cd ${SPARK_HOME}; module load java; nohup ./bin/spark-class org.apache.spark.deploy.worker.Worker ${sparkmaster} &> ${logdir}/nohup-${nodes[$i]}.out" &
+done
+
+module load java
+${SPARK_HOME}/bin/spark-submit --master ${sparkmaster} --executor-memory 60G \
+--conf spark.default.parallelism=$parallelism \
+--class ${sparkclass} ${sparkjar} ${sparkargs}
+
+ssh ${nodes[0]} "source /etc/profile; module load java; cd ${SPARK_HOME}; ./sbin/stop-master"
+#ssh ${nnodes[0]} "source /etc/profile; module load java; cd ${SPARK_HOME}; ./sbin/stop-master"
+for i in $( seq 0 $last )
+do
+    ssh ${nodes[$i]} "killall java"
+done
+wait

@@ -1,0 +1,310 @@
+----------------------------------------
+Begin PBS Prologue Fri Feb 24 14:14:18 PST 2017
+Job ID:		16340016.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Nodes:		n12 n13 n14 n15 n16 n17 n18 n19 n20 n23
+End PBS Prologue Fri Feb 24 14:14:18 PST 2017
+----------------------------------------
+using spark home /data/nc-em/russelt/spark/
+400
+starting org.apache.spark.deploy.master.Master, logging to /data/nc-em/russelt/spark/logs/spark-gayathrim-org.apache.spark.deploy.master.Master-1-n12.out
+14:14:22,203 INFO  [ClientRunner] run: entry
+14:14:22,505 INFO  [SIFTPointMatchClient] runClient: entry, parameters={
+  "baseDataUrl" : "http://em-131fs:8080/render-ws/v1",
+  "owner" : "gayathri",
+  "collection" : "Phase1RawData_AIBS",
+  "pairJson" : "/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tile_pairs_Phase1RawData_AIBS_z_2266_to_2300_dist_0.json.gz",
+  "renderWithFilter" : true,
+  "renderWithoutMask" : true,
+  "renderScale" : 0.6,
+  "fillWithNoise" : true,
+  "fdSize" : 8,
+  "minScale" : 0.58,
+  "maxScale" : 0.62,
+  "steps" : 2,
+  "matchRod" : 0.8,
+  "matchMaxEpsilon" : 20.0,
+  "matchMinInlierRatio" : 0.0,
+  "matchMinNumInliers" : 4,
+  "matchMaxNumInliers" : 100,
+  "maxFeatureCacheGb" : 15
+}
+14:14:22,876 WARN  [NativeCodeLoader] Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14:14:25,896 INFO  [SIFTPointMatchClient] run: appId is app-20170224141424-0000, executors data is [ {
+  "id" : "driver",
+  "hostPort" : "172.20.101.75:34042",
+  "isActive" : true,
+  "rddBlocks" : 0,
+  "memoryUsed" : 0,
+  "diskUsed" : 0,
+  "totalCores" : 0,
+  "maxTasks" : 0,
+  "activeTasks" : 0,
+  "failedTasks" : 0,
+  "completedTasks" : 0,
+  "totalTasks" : 0,
+  "totalDuration" : 0,
+  "totalGCTime" : 0,
+  "totalInputBytes" : 0,
+  "totalShuffleRead" : 0,
+  "totalShuffleWrite" : 0,
+  "maxMemory" : 384093388,
+  "executorLogs" : { }
+} ]
+14:14:25,989 INFO  [RenderableCanvasIdPairsUtilities] load: entry, path=/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tile_pairs_Phase1RawData_AIBS_z_2266_to_2300_dist_0.json.gz
+14:14:26,236 INFO  [RenderableCanvasIdPairsUtilities] load: exit, loaded 38442 pairs
+14:14:26,243 INFO  [RenderableCanvasIdPairsUtilities] getRenderParametersUrlTemplateForRun: returning http://em-131fs:8080/render-ws/v1/owner/gayathri/project/EM_Phase1/stack/Phase1RawData_AIBS/tile/{id}/render-parameters?scale=0.6&filter=true&excludeMask=true&normalizeForMatching=true
+14:14:26,762 INFO  [SIFTPointMatchClient] run: 400 partitions, debug string is: 
+(400) MapPartitionsRDD[2] at mapPartitionsWithIndex at SIFTPointMatchClient.java:244 []
+  |   MapPartitionsRDD[1] at mapPartitionsWithIndex at SIFTPointMatchClient.java:184 []
+  |   ParallelCollectionRDD[0] at parallelize at SIFTPointMatchClient.java:181 []
+14:14:41,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:14:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:15:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:15:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:15:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:15:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:16:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:16:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:16:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:16:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:17:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:17:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:17:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:17:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:18:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:18:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:18:41,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:18:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:19:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:19:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:19:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:19:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:20:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:20:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:20:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:20:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:21:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:21:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:21:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:21:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:22:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:22:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:22:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:22:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:23:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:23:26,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:23:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:23:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:24:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:24:26,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:24:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:24:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:25:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:25:26,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:25:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:25:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:26:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:26:26,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:26:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:26:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:27:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:27:26,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:27:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:27:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:28:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:28:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:28:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:28:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:29:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:29:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:29:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:29:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:30:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:30:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:30:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:30:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:31:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:31:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:31:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:31:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:32:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:32:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:32:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:32:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:33:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:33:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:33:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:33:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:34:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:34:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:34:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:34:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:35:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:35:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:35:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:35:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:36:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:36:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:36:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:36:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:37:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:37:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:37:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:37:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:38:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:38:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:38:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:38:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:39:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:39:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:39:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:39:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:40:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:40:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:40:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:40:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:41:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:41:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:41:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:41:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:42:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:42:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:42:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:42:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:43:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:43:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:43:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:43:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:44:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:44:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:44:41,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:44:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:45:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:45:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:45:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:45:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:46:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:46:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:46:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:46:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:47:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:47:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:47:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:47:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:48:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:48:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:48:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:48:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:49:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:49:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:49:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:49:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:50:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:50:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:50:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:50:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:51:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:51:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:51:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:51:56,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:52:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:52:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:52:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:52:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:53:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:53:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:53:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:53:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:54:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:54:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:54:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:54:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:55:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:55:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:55:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:55:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:56:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:56:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:56:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:56:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:57:11,886 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:57:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:57:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:57:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:58:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:58:26,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:58:41,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:58:56,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:59:11,885 WARN  [TaskSchedulerImpl] Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+14:59:19,147 ERROR [ClientRunner] run: caught exception
+org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:818)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:816)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:816)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:1685)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:83)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1604)
+	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1781)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1290)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1780)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:559)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:215)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1953)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:187)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:187)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:177)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:632)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1873)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1886)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1899)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:1913)
+	at org.apache.spark.rdd.RDD$$anonfun$collect$1.apply(RDD.scala:912)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:358)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:911)
+	at org.apache.spark.api.java.JavaRDDLike$class.collect(JavaRDDLike.scala:360)
+	at org.apache.spark.api.java.AbstractJavaRDDLike.collect(JavaRDDLike.scala:45)
+	at org.janelia.render.client.spark.SIFTPointMatchClient.run(SIFTPointMatchClient.java:256)
+	at org.janelia.render.client.spark.SIFTPointMatchClient$1.runClient(SIFTPointMatchClient.java:125)
+	at org.janelia.render.client.ClientRunner.run(ClientRunner.java:38)
+	at org.janelia.render.client.spark.SIFTPointMatchClient.main(SIFTPointMatchClient.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:736)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:185)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:210)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:124)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+14:59:19,149 ERROR [LiveListenerBus] SparkListenerBus has already stopped! Dropping event SparkListenerStageCompleted(org.apache.spark.scheduler.StageInfo@17325a87)
+14:59:19,150 INFO  [ClientRunner] run: exit, processing failed after 0 hours, 44 minutes, 56 seconds
+14:59:19,151 ERROR [LiveListenerBus] SparkListenerBus has already stopped! Dropping event SparkListenerJobEnd(0,1487977159150,JobFailed(org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down))
+----------------------------------------
+Begin PBS Epilogue Fri Feb 24 14:59:25 PST 2017
+Job ID:		16340016.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Job Name:	spark_PBS_test
+Session:	18147
+Limits:		neednodes=10:ppn=20,nodes=10:ppn=20,walltime=00:45:00
+Resources:	cput=00:00:22,mem=667308kb,vmem=9343436kb,walltime=00:45:02
+Queue:		connectome
+Account:		
+Exit status:	271
+Nodes:	n12 n13 n14 n15 n16 n17 n18 n19 n20 n23
+Killing leftovers...
+
+End PBS Epilogue Fri Feb 24 14:59:25 PST 2017
+----------------------------------------
