@@ -1,0 +1,13 @@
+{
+  "baseDataUrl":"http://em-131fs:8080/render-ws/v1",
+  "owner":"gayathri",
+  "project":"EM_Phase1",
+  "stackResX":3.58,
+  "stackResY":3.58,
+  "stackResZ":40,
+  "stack":"Phase1Data",
+  "delExisting":1,
+  "validateTiles":0,
+  "renderBinPath":"/EMdata/code/render/render-ws-java-client/src/main/scripts/",
+  "importDataDir":"/EMdata/ingesttest1/"
+}
