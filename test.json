@@ -1,0 +1,7 @@
+{
+  "bounds": {"maxX": 11501.0,"maxY": 34395.0,"maxZ": 0.0,"minX": 1527.0,"minY": -1296.0,"minZ": 0.0},
+  "filepath": "/nas4/data/M270907_Scnn1aTg2Tdt_13/processed/lowrescache/M270907_Scnn1aTg2Tdt_13/ALIGNEDSTACK_JAN3_DAPI_1_NORM_CONS/sections_at_0.1/000/0/0.0.png",
+  "roi": {"coordinates": [[[9617.0, -1296.0],[11047.0, 34394.0],[3777.0, 34394.0],[2997.0, -1296.0],[9617.0, -1296.0]]],"type": "Polygon"},
+  "z": 0
+}
+
