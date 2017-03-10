@@ -34,6 +34,8 @@ if __name__ == "__main__":
     lastz = int(sys.argv[2])
     outfn = sys.argv[3]
 
+    print outfn
+
     zdict = {r['z_index']:
         {'raw_data': r['tile_directory'],
          'lens_correction_string': readlc(r['lens_correction']['tile_directory'])}
@@ -47,6 +49,6 @@ if __name__ == "__main__":
     with open(jsonfn, 'w') as f:
         json.dump(zdict, f)
 
-    with open(outfn, 'w') as f:
-        for ln in set([z['raw_data'] for z in zdict.values()]):
-            f.write('{}\n'.format(ln))
+#    with open(outfn, 'w') as f:
+#        for ln in set([z['raw_data'] for z in zdict.values()]):
+#            f.write('{}\n'.format(ln))

@@ -55,10 +55,11 @@ tileSpecTemplate = """{{
 }}"""
 
 sectionJsonfile = sys.argv[1]
-inputDirPath = ''# sys.argv[2]
-specDirectory = sys.argv[2]
+inputDirPath = sys.argv[2]
+specDirectory = sys.argv[3]
 
-sectionDataPath = os.path.abspath(sectionJsonfile)
+#sectionDataPath = os.path.abspath(sectionJsonfile)
+sectionDataPath = os.path.join(inputDirPath, sectionJsonfile)
 
 with open(sectionDataPath) as sectionDataFile:
     sectionData = json.load(sectionDataFile)
@@ -75,7 +76,7 @@ for section in sectionData:
     lensSpecs[lensTransformId] = lensSpecTemplate.format(lensTransformId, lensCorrectionString)
 
     rawFileDir = rawData # os.path.join(inputDirPath, camera)
-    print rawFileDir
+#    print rawFileDir
     if not os.path.exists(rawFileDir):
         continue
     rawFileNameList = glob.glob(rawFileDir + "/_track*.txt")

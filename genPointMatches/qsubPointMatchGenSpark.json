@@ -8,8 +8,8 @@
   "args":{
     "baseDataUrl":"http://em-131fs:8080/render-ws/v1",
     "owner":"gayathri",
-    "collection":"Phase1Data_2416_2465_montagePM",
-    "pairJson":"/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tilepairs/tile_pairs_Phase1Data_2416_2465_z_2416_to_2440_dist_0.json.gz",
+    "collection":"Phase1Data_2516_2565_montagePM",
+    "pairJson":"/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tilepairs/tile_pairs_Phase1Data_2516_2565_z_2516_to_2540_dist_0.json.gz",
     "SIFTfdSize":8,
     "SIFTsteps":2,
     "matchMaxEpsilon":20.0,
