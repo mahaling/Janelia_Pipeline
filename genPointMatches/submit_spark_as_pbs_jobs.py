@@ -17,7 +17,7 @@ if __name__ == '__main__':
         inputParams = json.load(inputJson)
 
     if inputParams["no_nodes"] is None:
-        inputParams["no_nodes"] = 20
+        inputParams["no_nodes"] = 30
 
     if inputParams["className"] is None:
         print "Need a class name"
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     if inputParams["sparkhome"] is None:
         inputParams["sparkhome"] = "/data/nc-em/russelt/spark/"
 
-    cmd = "qsub -l nodes=" + str(inputParams["no_nodes"]) + ":ppn=20 -q connectome -v logdir=" + inputParams["logdir"]
+    cmd = "qsub -l nodes=" + str(inputParams["no_nodes"]) + ":ppn=" + str(inputParams["ppn"]) + " -q emconnectome -v logdir=" + inputParams["logdir"]
     cmd = cmd + ",SPARK_HOME=" + inputParams["sparkhome"] + ",sparkjar=" + inputParams["jarfile"] + ",sparkclass=" + inputParams["className"] + ",sparkargs="
     arguments = "\""
     for key,value in inputParams["args"].items():
@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     arguments = arguments + "\""
     cmd = cmd + arguments
-    cmd = cmd + " " + os.path.join(inputParams["sparkhome"], "spinup_spark.pbs")
-#    os.system(cmd)
+    #cmd = cmd + " " + os.path.join(inputParams["sparkhome"], "spinup_spark.pbs")
+    cmd = cmd + " " + "spinup_spark.pbs"
+    os.system(cmd)
     print cmd

@@ -5,17 +5,17 @@
   "memory":"120g",
   "jarfile":"/data/nc-em2/gayathrim/Janelia_Pipeline/renderBin/lib/render-ws-spark-client-0.3.0-SNAPSHOT-standalone.jar",
   "owner":"gayathri",
-  "targetCollection":"Phase1RawData_AIBS_montage",
-  "pairJson":"/data/nc-em2/gayathrim/Janelia_Pipeline_Scripts/genPointMatches/tile_pairs_Phase1RawData_AIBS_z_2301_to_2400_dist_0.json.gz",
+  "targetCollection":"Phase1Data_2366_2415_montagePM",
+  "pairJson":"/data/nc-em2/gayathrim/Janelia_Pipeline/genPointMatches/tilepairs/tile_pairs_Phase1Data_2366_2415_z_2366_to_2415_dist_0.json.gz",
   "SIFTfdSize":8,
   "SIFTsteps":2,
   "matchMaxEpsilon":20.0,
   "maxFeatureCacheGb":15,
   "SIFTminScale": 0.58,
-  "renderScale":0.6,
+  "renderScale":0.5,
   "SIFTmaxScale":0.62,
   "matchRod":0.8,
   "matchMinInlierRatio":0.0,
   "matchMinNumInliers":4,
-  "matchMaxNumInliers":100
+  "matchMaxNumInliers":200
 }

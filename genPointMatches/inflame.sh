@@ -13,4 +13,5 @@ shift 3
 inputargs="$@"
 echo $inputargs
 
-qsub -l nodes=${no_nodes}:ppn=20 -q connectome -v logdir=$sparkhome,SPARK_HOME=$sparkhome,sparkjar=$alignjar,sparkclass=$className,sparkargs="$inputargs" ${sparkhome}/"spinup_spark.pbs"
+qsub -l nodes=${no_nodes}:ppn=30 -q emconnectome -v logdir=$sparkhome,SPARK_HOME=$sparkhome,sparkjar=$alignjar,sparkclass=$className,sparkargs="$inputargs" 
+${sparkhome}/"spinup_spark.pbs"

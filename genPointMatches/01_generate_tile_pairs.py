@@ -32,5 +32,7 @@ if __name__ == '__main__':
 
     cmd = base_cmd + P1 + P2 + P3 + filter_opts + " --zNeighborDistance " + str(inputParams["distance"]) + " --toJson " + withinJson
     os.system(cmd)
+    cmd = "chmod 777 " + withinJson
+    os.system(cmd)
 
 
