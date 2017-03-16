@@ -6,7 +6,7 @@
   "stackResY":3.58,
   "stackResZ":40,
   "stack":"Phase1Data_2266_2315",
-  "delExisting":1,
+  "delExisting":0,
   "validateTiles":0,
   "renderBinPath":"/data/em-131fs/code/render/render-ws-java-client/src/main/scripts/",
   "importDataDir":"/data/em-131fs/tileSpecsPhase1_Mar2017/tilespecs_2266_2315/"
