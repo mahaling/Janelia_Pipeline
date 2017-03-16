@@ -16,5 +16,6 @@ fprintf(fp, '#PBS -r n\n');
 fprintf(fp, '#PBS -m n\n');
 fprintf(fp, '#PBS -o %s\n', logfile);
 fprintf(fp, '#PBS -e %s\n', errorfile);
-fprintf(fp, '/data/nc-em2/gayathrim/Janelia_Pipeline/montage/solve_montage_SL /data/nc-em2/gayathrim/Janelia_Pipeline/scratch/%s\n', jsonfile);
+fprintf(fp, '#PBS -q emconnectome\n');
+fprintf(fp, '/data/nc-em2/gayathrim/Janelia_Pipeline/montage/solve_montage_SL /data/nc-em2/gayathrim/Janelia_Pipeline/scratch/jsonFiles/%s\n', jsonfile);
 fclose(fp);
