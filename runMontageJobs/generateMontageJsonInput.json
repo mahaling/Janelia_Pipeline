@@ -1,0 +1,14 @@
+{
+	"owner":"gayathri",
+	"project":"EM_Phase1",
+	"sourceStack":"Phase1Data_3266_3315",
+	"targetPMCollection":"Phase1Data_3266_3315_montagePM",
+	"targetStack":"Phase1Data_3216_3315_Montage",
+	"minz":3266,
+	"maxz":3315,
+	"solverDegree":2,
+	"outputdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/jsonFiles",
+	"logdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/logs",
+	"qsubdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/qsub_files",
+	"scratchdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch"
+}

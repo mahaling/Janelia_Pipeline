@@ -1,0 +1,14 @@
+{
+	"owner":"gayathri",
+	"project":"EM_Phase1",
+	"sourceStack":"Phase1Data_ZMIN_ZMAX",
+	"targetPMCollection":"Phase1Data_ZMIN_ZMAX_montagePM",
+	"targetStack":"Phase1Data_ZMIN_ZMAX_Montage",
+	"minz":"ZMIN",
+	"maxz":"ZMAX",
+	"solverDegree":2,
+	"outputdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/jsonFiles",
+	"logdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/logs",
+	"qsubdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/qsub_files",
+	"scratchdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch"
+}
