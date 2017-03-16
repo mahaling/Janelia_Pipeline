@@ -1,0 +1,75 @@
+ -F (--forceFeatureExtraction)          : Extract features even if they were
+                                          already extracted.
+ -M (--maxSIFTScale) N                  : SIFT maximum scale (minSize *
+                                          minScale < size < maxSize * maxScale).
+ -S (--server) VAL                      : Server base URL.
+ -aa (--firstZ) N                       : First z value, default first in stack.
+ -ab (--lastZ) N                        : Last z value, default last in stack.
+ -ad (--fdSize) N                       : SIFT feature descriptor size (how
+                                          many samples per row and column).
+ -ae (--steps) N                        : SIFT steps per scale octave.
+ -af (--skipSimilarityMatrix)           : Skip building a similarity matrix.
+ -ag (--skipAlignedImageGeneration)     : Skip generation of aligned layer
+                                          images.
+ -ah (--skipIntensityFilter)            : Skip application of intensity filter
+                                          to rendered scapes.
+ -ai (--clipWidthFactor) N              : If specified, rendered scapes will
+                                          have left and right edges evenly
+                                          clipped so that the rendered width is
+                                          this factor times the actual width.
+ -aj (--memoryOnlyMontageRendering)     : Skip saving rendered montages to disk.
+ -ak (--solverRegularizerModelType)     : Type of model for regularizing the
+ [TRANSLATION | RIGID | SIMILARITY |      alignment solution
+ AFFINE]                                   
+ -al (--clipCenterFile) VAL             : CSV file containing z amd clipCenter
+                                          coordinates.
+ -am (--clipHeightFactor) N             : If specified, rendered scapes will
+                                          have top and bottom edges evenly
+                                          clipped so that the rendered height
+                                          is this factor times the actual
+                                          height.
+ -c (--concordePath) VAL                : Path to concorde executable (if
+                                          unspecified, TSP analysis will not be
+                                          performed).
+ -f (--forceMontageRendering)           : Regenerate montage image even if it
+                                          exists.
+ -m (--minSIFTScale) N                  : SIFT minimum scale (minSize *
+                                          minScale < size < maxSize * maxScale).
+ -ma (--matchRod) N                     : Ratio of distances for matches
+ -mb (--matchModelType) [TRANSLATION |  : Type of model for match filtering
+ RIGID | SIMILARITY | AFFINE]              
+ -mc (--matchIterations) N              : Match filter iterations
+ -md (--matchMaxEpsilon) N              : Minimal allowed transfer error for
+                                          match filtering
+ -me (--matchMinInlierRatio) N          : Minimal ratio of inliers to
+                                          candidates for match filtering
+ -mf (--matchMinNumInliers) N           : Minimal absolute number of inliers
+                                          for match filtering
+ -mg (--matchMaxTrust) N                : Reject match candidates with a cost
+                                          larger than maxTrust * median cost
+ -mh (--matchMaxNumInliers) N           : Maximum number of inliers for match
+                                          filtering
+ -o (--outputPath) VAL                  : Output path.
+ -of (--outputFormat) VAL               : Output file format.
+ -p (--project) VAL                     : Project ID.
+ -r (--range) N                         : Range (maximum distance) for
+                                          similarity comparisons.
+ -s (--stack) VAL                       : Stack ID.
+ -t (--scale) N                         : Scale.
+ -u (--owner, --user) VAL               : Owner.
+Exception in thread "main" java.lang.RuntimeException: org.kohsuke.args4j.CmdLineException: No argument is allowed: y
+	at org.janelia.saalfeldlab.renderalign.LayerOrderAnalyzer$Options.<init>(LayerOrderAnalyzer.java:207)
+	at org.janelia.saalfeldlab.renderalign.LayerOrderAnalyzer.main(LayerOrderAnalyzer.java:300)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:736)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:185)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:210)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:124)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: org.kohsuke.args4j.CmdLineException: No argument is allowed: y
+	at org.kohsuke.args4j.CmdLineParser.parseArgument(CmdLineParser.java:556)
+	at org.janelia.saalfeldlab.renderalign.LayerOrderAnalyzer$Options.<init>(LayerOrderAnalyzer.java:203)
+	... 10 more

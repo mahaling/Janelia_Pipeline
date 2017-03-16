@@ -1,0 +1,48 @@
+{
+    "source_montage_collection": {
+        "stack": "Phase1Data_Montage",
+        "owner": "gayathri",
+        "project":"EM_Phase1",
+        "service_host": "em-131fs:8080",
+        "baseURL": "http://em-131fs/render-ws/v1",
+        "verbose":1
+    },
+    "target_rough_collection": {
+        "stack": "Phase1Data_Rough",
+        "owner": "gayathri",
+        "project": "EM+Phase1",
+        "service_host": "em-131fs:8080",
+        "baseURL": "http://em-131fs/render-ws/v1",
+        "verbose": 1,
+        "versionNotes": "Rough alignment v1"
+    },
+    "montage_scape_pm_generation": {
+        "service_host": "em-131fs:8080",
+        "owner": "gayathri",
+        "project": "EM_Phase1",
+        "stack": "Phase1Data_Montage",
+        "fd_size":"10",
+        "min_sift_scale":"0.2",
+        "max_sift_scale":"1.0",
+        "steps":"3",
+        "similarity_range":"3",
+        "skip_similarity_matrix":"y",
+        "skip_aligned_image_generation":"y",
+        "base_output_dir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/tilePairs",
+        "number_of_spark_nodes":"15.0",
+        "first":"2266",
+        "last":"2500",
+        "scale":"0.1",
+        "center_box":1.0,
+        "run_dir":".",
+        "rough_solve":"affine"
+    },
+    "zfirst":2266,
+    "zlast":2500,
+    "scale":0.1,
+    "run_now":0,
+    "filter_option":3,
+    "EM_aligner_path":"/data/nc-em2/gayathrim/Janelia_Pipeline/EM_aligner",
+    "dir_store_rough_slab":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/tilePairs",
+    "dir_rough_intermediate_store":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/inter"
+}

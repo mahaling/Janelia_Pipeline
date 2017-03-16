@@ -1,0 +1,24 @@
+{
+	"sparkhome":"/data/nc-em/russelt/spark/",
+  	"no_nodes":15,
+	"ppn":32,
+	"className":"org.janelia.saalfeldlab.renderalign.LayerOrderAnalyzer",
+	"jarfile":"/data/nc-em2/gayathrim/Janelia_Pipeline/renderBin/lib/current-align.jar",
+	"logdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/sparkLogs/",
+	"args":{
+		"server":"http://em-131fs:8080/render-ws/v1",
+		"owner":"gayathri",
+		"project":"EM_Phase1",
+		"stack":"Phase1Data_2266_2315_Montage",
+		"firstZ":2266,
+		"lastZ":2315,
+		"fdSize":8,
+		"minSIFTScale": 0.58,
+		"maxSIFTScale":0.62,
+		"steps":2,
+		"scale":0.05,
+		"range":3,
+		"outputPath":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/tilePairs"
+	}
+}
+		

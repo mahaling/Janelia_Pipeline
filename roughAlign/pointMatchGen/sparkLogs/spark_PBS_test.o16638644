@@ -1,0 +1,53 @@
+----------------------------------------
+Begin PBS Prologue Wed Mar 15 15:49:27 PDT 2017
+Job ID:		16638644.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Nodes:		n100 n101 n102 n103 n78 n79 n91 n92 n93 n94 n95 n96 n97 n98 n99
+End PBS Prologue Wed Mar 15 15:49:27 PDT 2017
+----------------------------------------
+using spark home /data/nc-em/russelt/spark/
+1170
+starting org.apache.spark.deploy.master.Master, logging to /data/nc-em/russelt/spark/logs/spark-gayathrim-org.apache.spark.deploy.master.Master-1-n100.out
+
+2017-03-15 15:49:33 *************** Job started! ***************
+
+2017-03-15 15:49:33 running class org.janelia.saalfeldlab.renderalign.LayerOrderAnalyzer with Options{server='http://em-131fs:8080/render-ws/v1', owner='gayathri', projectId='EM_Phase1', stackId='Phase1Data_2266_2315_Montage', scale=0.05, outputPath='/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/', firstZ=2266.0, lastZ=2290.0, skipIntensityFilter=false, clipWidthFactor=null, range=3, forceMontageRendering=false, memoryOnlyMontageRendering=false, forceFeatureExtraction=false, fdSize=8, minSIFTScale=0.58, maxSIFTScale=0.62, steps=2, matchRod=0.92, matchModelType=AFFINE, matchIterations=1000, matchMaxEpsilon=20.0, matchMinInlierRatio=0.0, matchMinNumInliers=4, matchMaxTrust=3.0, matchMaxNumInliers=null, skipSimilarityMatrix=false, skipAlignedImageGeneration=false}
+
+2017-03-15 15:49:35 retrieved 50 values from http://em-131fs:8080/render-ws/v1/owner/gayathri/project/EM_Phase1/stack/Phase1Data_2266_2315_Montage/zValues
+
+2017-03-15 15:49:35 after filtering, working with 25 layers
+----------------------------------------
+Begin PBS Epilogue Wed Mar 15 15:51:08 PDT 2017
+Job ID:		16638644.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Job Name:	spark_PBS_test
+Session:	7269
+Limits:		neednodes=15:ppn=32,nodes=15:ppn=32,walltime=60:45:00
+Resources:	cput=00:00:22,mem=1152672kb,vmem=12470844kb,walltime=00:01:35
+Queue:		emconnectome
+Account:		
+Exit status:	271
+Nodes:	n100 n101 n102 n103 n78 n79 n91 n92 n93 n94 n95 n96 n97 n98 n99
+Killing leftovers...
+
+End PBS Epilogue Wed Mar 15 15:51:08 PDT 2017
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Wed Mar 15 15:51:09 PDT 2017
+Job ID:		16638644.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Job Name:	spark_PBS_test
+Session:	7269
+Limits:		neednodes=15:ppn=32,nodes=15:ppn=32,walltime=60:45:00
+Resources:	cput=00:00:22,mem=1152672kb,vmem=12470844kb,walltime=00:01:35
+Queue:		emconnectome
+Account:		
+Exit status:	271
+Nodes:	n100 n101 n102 n103 n78 n79 n91 n92 n93 n94 n95 n96 n97 n98 n99
+Killing leftovers...
+
+End PBS Epilogue Wed Mar 15 15:51:09 PDT 2017
+----------------------------------------

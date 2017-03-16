@@ -1,0 +1,31 @@
+----------------------------------------
+Begin PBS Prologue Tue Mar 14 16:31:47 PDT 2017
+Job ID:		16609727.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Nodes:		n100 n101 n102 n103 n78 n79 n91 n92 n93 n94 n95 n96 n97 n98 n99
+End PBS Prologue Tue Mar 14 16:31:47 PDT 2017
+----------------------------------------
+using spark home /data/nc-em/russelt/spark/
+1170
+starting org.apache.spark.deploy.master.Master, logging to /data/nc-em/russelt/spark/logs/spark-gayathrim-org.apache.spark.deploy.master.Master-1-n100.out
+
+2017-03-14 16:31:50 *************** Job started! ***************
+stopping org.apache.spark.deploy.master.Master
+----------------------------------------
+Begin PBS Epilogue Tue Mar 14 16:31:59 PDT 2017
+Job ID:		16609727.qmaster.corp.alleninstitute.org
+Username:	gayathrim
+Group:		gayathrim
+Job Name:	spark_PBS_test
+Session:	20501
+Limits:		neednodes=15:ppn=32,nodes=15:ppn=32,walltime=60:45:00
+Resources:	cput=00:00:01,mem=23428kb,vmem=581896kb,walltime=00:00:07
+Queue:		emconnectome
+Account:		
+Exit status:	0
+Nodes:	n100 n101 n102 n103 n78 n79 n91 n92 n93 n94 n95 n96 n97 n98 n99
+Killing leftovers...
+
+End PBS Epilogue Tue Mar 14 16:31:59 PDT 2017
+----------------------------------------
