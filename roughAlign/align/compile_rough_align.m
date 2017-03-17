@@ -33,5 +33,5 @@ for ix = 1:numel(fn_use)
     astr = [astr sprintf(' -a %s/level_1/%s', dir_EM_aligner, fn_use(ix).name)];
 end
 
-str = sprintf('mcc -m -R -nodesktop -v rough_align.m %s;', astr);
+str = sprintf('mcc -m -R -nodesktop -v /data/nc-em2/gayathrim/Janelia_Pipeline/roughAlign/align/rough_align.m %s;', astr);
 eval(str);
