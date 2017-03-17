@@ -1,7 +1,9 @@
 {
-  "owner":"gayathri",
-  "project":"EM_Phase1",
-  "sourceStack":"Phase1Data_ZMIN_ZMAX_Montage",
-  "targetStack":"Phase1Data_ZMIN_ZMAX_Rough",
-  "montage_pm_stack":"Phase1Data_ZMIN_ZMAX_Montage"
+  "templateJson":"/data/nc-em2/gayathrim/Janelia_Pipeline/roughAlign/align/templateJson.json",
+  "minz":2266,
+  "maxz":2315,
+  "script":"/data/nc-em2/gayathrim/Janelia_Pipeline/roughAlign/align/rough_align",
+  "jsonoutdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/jsonFiles",
+  "qsubdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/qsubFiles",
+  "logdir":"/data/nc-em2/gayathrim/Janelia_Pipeline/scratch/rough/logs"
 }
